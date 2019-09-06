@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> class engagement</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./bulma.css" />
+    </head>
+
+    <body>
+        <div class="tabs">
+            <ul>
+              <li id="about" class="is-active"><a>about</a></li>
+              <li id="shop"><a>shop</a></li>
+              <li id="contact"><a>contact</a></li>
+            </ul>
+          </div>
+
+    </body>
+    <script>
+        var aboutTab = document.querySelector('#about');
+        aboutTab.onclick = function() {
+            document.querySelector('.is-active').classList.remove('is-active')
+            aboutTab.classList.add('is-active')
+        }
+        var shopTab = document.querySelector('#shop');
+        shopTab.onclick = function() {
+            document.querySelector('.is-active').classList.remove('is-active')
+            shopTab.classList.add('is-active')
+
+        }
+
+        var contactTab = document.querySelector('#contact');
+        contactTab.onclick = function() {
+            document.querySelector('.is-active').classList.remove('is-active')
+            contactTab.classList.add('is-active')
+            }
+    </script>
+</html>
+
